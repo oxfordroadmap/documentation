@@ -2,30 +2,30 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: 🏡 首頁
+  - name: 🏡Home
     url: /
     weight: 10
-  - name: 🗂️ 文檔
+  - name: 🗂️ Documentation
     url: docs/
     weight: 20
-  - name: ✍ 筆記
+  - name: ✍ Blog
     url: blog/
     weight: 30
-  - name: 🤖 案例
+  - name: 🤖 Showcase
     url: showcase/
     weight: 40
-  - name: 👍 社群
+  - name: 👍Community
     url: community/
     weight: 50
 
 sidebar:
   - identifier: more
-    name: 需要更多協助?
+    name: Still need help?
     params:
       type: separator
     weight: 1
   - identifier: community
-    name: "👍 社群"
+    name: "👍 Community"
     pageRef: "/community"
     weight: 2
 #  - identifier: hugoDocs

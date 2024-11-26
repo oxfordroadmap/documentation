@@ -43,14 +43,14 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: zh
+defaultContentLanguage: zh-hant
 defaultContentLanguageInSubdir: false
 hasCJKLanguage: true
 removePathAccents: true
 languages:
-  zh:
+  zh-hant:
     disabled: false
-    languageCode: zh-Hant
+    languageCode: zh-hant
     languageName: 中文 (正體)
     languageDirection: ltr
     title: 多語歐拉瑪項目實作 
