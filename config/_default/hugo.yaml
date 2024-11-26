@@ -3,8 +3,9 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: "Hugo Docs" # Website name
-baseURL: 'https://example.com/' # Website URL
+title: "多語歐拉瑪項目實作 -- Ollama Polyglot Project" # Website name
+baseURL: 'https://oxfordroadmap.github.io/documentation' # Website URL
+canonifyURLs: 'false'
 
 ############################
 ## PAGE OPTIONS
@@ -42,23 +43,39 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: zh
 defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
 removePathAccents: true
+languages:
+  zh:
+    disabled: false
+    languageCode: zh-Hant
+    languageName: 中文 (正體)
+    languageDirection: ltr
+    title: 多語歐拉瑪項目實作 
+    disabled: false
+    weight: 1
+  en:
+    disabled: false
+    languageCode: en-US
+    languageName: English
+    languageDirection: ltr
+    title: Ollama Polyglot Project
+    weight: 2
 
 ############################
 ## ADVANCED
 ############################
 
-build:
-  writeStats: true
-enableGitInfo: false
+enableGitInfo: true
 summaryLength: 30
 pagination:
   pagerSize: 10
-enableEmoji: true
 enableRobotsTXT: true
+build:
+  writeStats: true
+enableGitInfo: false
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 enableInlineShortcodes: true
@@ -82,6 +99,26 @@ taxonomies:
   author: authors
 markup:
   _merge: deep
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: true
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: true 
 related:
   threshold: 80
   includeNewer: true
@@ -97,3 +134,4 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+refLinksErrorLevel: WARNIx
