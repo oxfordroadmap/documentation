@@ -1,0 +1,11 @@
+aside.hb-sidebar-container, nav.hb-toc {
+    max-width: 150px !important;
+    min-width: 80px !important;
+}
+
+.text-xs {
+    font-size: 0.25rem !important;
+}
+.text-sm {
+    font-size: 0.5rem !important;
+}
