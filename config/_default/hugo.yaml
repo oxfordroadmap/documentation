@@ -23,7 +23,7 @@ cascade:
     show_date_updated: true
   # Blog post options
   - _target:
-      path: /blog/**
+      path: /post/**
       kind: page
     pager: true
     editable: true
@@ -34,7 +34,7 @@ cascade:
     show_related: true
     share: true
     # Just use Breadcrumb for navigation on blog post pages?
-    show_breadcrumb: false
+    show_breadcrumb: true
     header:
       navbar:
         enable: true
