@@ -58,7 +58,7 @@ footer:
 
 # Localization
 locale:
-  date_format: '1944/06/06'
+  date_format: '1944-06-06'
   time_format: '6:06 AM'
 
 # Site features
